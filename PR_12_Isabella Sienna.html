@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <title> Kalkulator Sederhana</title>
+    </head>
+    <body style = "background-color: tan;">
+        <h1 style = "text-align: center; font-size: 40px; font-weight: bold;"> Perhitungan Luas Lapangan Persegi Panjang</h1>
+        <p style="font-family: 'Courier New', Courier, monospace; text-align:center; font-size: 30px; font-weight: bold; border-style: solid; border-color: black;";>
+        <b>Panjang Lapangan    =</b><input type="text" id="panjang"><br><br>
+        <b>Lebar Lapangan  =</b><input type="text" id="lebar"><br></p>
+        <p style ="text-align: center; font-size: 40px;">
+        <button type ="button" onclick="hitungluas()">Hitung Luas</button></p>
+        <h2 style ="text-align: center; font-size: 40px;">Hasil</h2>
+        <p style ="text-align: center; font-size: 40px;" p id ="hasildisini">
+        <script>
+            function hitungluas(){
+                panjang =document.getElementById("panjang").value;
+                lebar =document.getElementById("lebar").value;
+                let hasilluas = eval(panjang) * eval(lebar);
+                document.getElementById("hasildisini").innerHTML=hasilluas;
+            }
+        </script>
+    </body>
+</htmL>
