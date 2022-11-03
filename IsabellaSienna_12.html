@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title> Bulb on/off</title>
+<script type="text/javascript">
+    function light (show) {
+        var pic;
+        if (show== 0) {
+        pic="https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+    else {
+        pic="https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+    document.getElementById('bulb').src = pic;
+}  
+</script>
+</head>
+
+<body> 
+<img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100px" height="180px"><br>
+<p>
+<button type="button" onclick="light (1)">Turn on the light</button>
+<button type="button" onclick="light (0)">Turn off the light</button>
+</p>
+</body>
+</html>
